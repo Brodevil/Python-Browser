@@ -51,10 +51,11 @@ class MainWindow(QMainWindow):
     def update_url(self, q):
         self.url_bar.setText(q.toString())
 
+      
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    QApplication.setApplicationName("My Cool Browser")
+    window = MainWindow()
+    app.exec_()
 
-app = QApplication(sys.argv)
-QApplication.setApplicationName("My Cool Browser")
-window = MainWindow()
-app.exec_()
-
-# Run the program and just get the benfits
+    # Run the program and just get the benfits
