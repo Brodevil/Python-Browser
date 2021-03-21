@@ -39,6 +39,8 @@ class MainWindow(QMainWindow):
         navbar.addWidget(self.url_bar)
 
         self.browser.urlChanged.connect(self.update_url)
+        
+        
     def navigate_home(self):
         self.browser.setUrl(QUrl('http://google.com'))
 
@@ -54,3 +56,5 @@ app = QApplication(sys.argv)
 QApplication.setApplicationName("My Cool Browser")
 window = MainWindow()
 app.exec_()
+
+# Run the program and just get the benfits
